@@ -16,9 +16,9 @@ or
 `npm run start`
 
 Or it's possible to run it as a docker container with docker compose:
-`docker-compose -f docker-compose.yml -f docker-compose.dev.yml`
+`docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d`
 
-The application is divided into backend and frontend. Both backend and frontend runs with node.js.
+The application is divided into backend and frontend. Both backend and frontend runs on node.js.
 ## Backend
 Backend is built with express.js.
 There are three endpoints:
