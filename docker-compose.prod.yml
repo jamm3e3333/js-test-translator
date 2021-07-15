@@ -1,0 +1,12 @@
+version: "3"
+services:
+    node-translate:
+        build:
+            context: .
+            args:
+                NODE_ENV: production
+        environment:
+            - PORT_TR=${PORT_TR}
+            - END_POINT_TR=${END_POINT_TR}
+            - API_KEY_TR=${API_KEY_TR}
+        command: node index.js

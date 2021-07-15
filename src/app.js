@@ -3,7 +3,7 @@ const hbs = require('hbs');
 const path = require('path');
 const app = express();
 const translate = require('./utils/translate');
-const port = process.env.PORT || 3030;
+const port = process.env.PORT_TR || 3030;
 
 const publicPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../views');
