@@ -4,7 +4,7 @@
         <br />
         <button id="btn-sub">Translate</button>
         <br />
-        <p>Target language</p>
+        <p>Target language: </p>
         <select name="langs" id="langs">
             <option value="BG">Bulgarian</option>
             <option value="CS">Czech</option>
@@ -35,5 +35,8 @@
             <option value="SV">Swedish</option>
             <option value="ZH">Chinese</option>
         </select>
-        <div id="data-content"></div>
+        <p class="p-content" style="display: none">Translated text: </p>
+        <div id="data-main-content" style="display: none">
+            <div id="data-content"></div>
+        </div>
     </form>
