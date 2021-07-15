@@ -4,16 +4,21 @@ const $textAr = document.querySelector('#txt_translate');
 const dataDiv = document.querySelector('#data-content');
 $btnSub.addEventListener('click', (e) => {
     e.preventDefault();
+    if(!$textAr.value.trim()) {
+        $textAr.value = '';
+        $textAr.focus();
+        return alert('You didn\'t write any text.');
+    }
     e.target.setAttribute('disabled','disabled');
     dataDiv.textContent = 'Loading...';
 
     const selOption = $selectOpt.options[$selectOpt.selectedIndex].value;
 
-    makeReq(selOption, $textAr.value)
+    makeReq(selOption, $textAr.value.trim())
         .then((data) => {
             e.target.removeAttribute('disabled');
             if(data.text && data.lang ) {
-                dataDiv.innerHTML = data.lang + '<br />' + data.text + '<br />';
+                dataDiv.innerHTML = data.text;
             }
             else {
                 dataDiv.textContent = "Error catching data";
