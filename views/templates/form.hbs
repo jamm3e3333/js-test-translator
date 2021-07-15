@@ -1,8 +1,10 @@
 <form name="f-translate" id="f1">
-        <textarea name="txt_translate" id="txt_translate" rows="5" cols="20" placeholder="Text to translate..."></textarea>
+        <p>Type down the text you want to be translated:</p>
+        <textarea name="txt_translate" id="txt_translate" rows="5" cols="40" placeholder="Text to translate..."></textarea>
         <br />
         <button id="btn-sub">Translate</button>
         <br />
+        <p>Target language</p>
         <select name="langs" id="langs">
             <option value="BG">Bulgarian</option>
             <option value="CS">Czech</option>
@@ -33,5 +35,5 @@
             <option value="SV">Swedish</option>
             <option value="ZH">Chinese</option>
         </select>
+        <div id="data-content"></div>
     </form>
-    <div id="data-content"></div>

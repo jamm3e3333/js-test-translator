@@ -2,6 +2,9 @@ const $btnSub = document.querySelector('#btn-sub');
 const $selectOpt = document.querySelector('#langs');
 const $textAr = document.querySelector('#txt_translate');
 const dataDiv = document.querySelector('#data-content');
+const header = document.querySelector('.header');
+const fdiv = document.querySelector('.fdiv');
+
 $btnSub.addEventListener('click', (e) => {
     e.preventDefault();
     if(!$textAr.value.trim()) {
@@ -18,12 +21,15 @@ $btnSub.addEventListener('click', (e) => {
         .then((data) => {
             e.target.removeAttribute('disabled');
             if(data.text && data.lang ) {
-                dataDiv.innerHTML = data.text;
+                dataDiv.innerHTML = `<p>Translated text:</p> ${data.text}`;
             }
             else {
                 dataDiv.textContent = "Error catching data";
-            }
-            console.log(data);
+            };
+            window.scroll({
+             top: header.offsetHeight + fdiv.offsetHeight - dataDiv.offsetHeight,
+             behavior: 'smooth'
+            });
         })
         .catch((err) => {
             e.target.removeAttribute('disabled');
