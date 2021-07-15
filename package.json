@@ -4,7 +4,8 @@
   "description": "js-test-translator",
   "main": "index.js",
   "scripts": {
-    "dev": "env-cmd -f ./config/dev.env nodemon ./src/app.js -e js,css,hbs --unhandled-rejections=strict"
+    "dev": "env-cmd -f ./config/dev.env nodemon ./index.js -e js,css,hbs --unhandled-rejections=strict",
+    "start": "env-cmd -f ./config/prod.env node ./index.js"
   },
   "repository": {
     "type": "git",

@@ -53,7 +53,8 @@ app.get('*', (req, res) => {
     res.render('notfound', {});
 })
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}.`);
-})
+module.exports = {
+    app,
+    port
+};
 
