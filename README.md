@@ -20,8 +20,10 @@ Or it's possible to run it as a docker container with docker compose:
 
 The application is divided into backend and frontend. Both backend and frontend runs on node.js.
 ## Backend
+
 Backend is built with express.js.
 There are three endpoints:
+When you run the code locally then the url parameter is `localhost:3030`.
 
 1. POST `{{url}}/send/data`
 - body:
