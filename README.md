@@ -40,10 +40,10 @@ body:
 - When the request is sent from the client to this endpoint the function `translate` is executed and will send the request to the DEPL API with the specified parameters. The function will then return a response from the server, which is sent back to the client. 
 
 2. GET `{{url}}/`
-- When the request is sent to this endpoint the whole frontend app is served to the client.
+- When the request is sent to this endpoint, the whole frontend app is served to the client.
 
 3. GET `{{url}}*`
-- In case the client will try to add some parameters withing the get method the server will return the 404 - page not found.
+- In case the client will try to add some parameters within the `GET` method the server will return the 404 - page not found.
 
 ## Frontend
 Frontend runs on node.js too. It's created with simple JS/html/css and hbs templates.
