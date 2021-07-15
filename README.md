@@ -50,6 +50,6 @@ Frontend runs on node.js too. It's created with simple JS/html/css and hbs templ
 
 On the html, page there's a textarea element where the text is written for translation. 
 
-Under the textarea element there's a submit button. When the button is clicked it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DeepL API. 
+Under the textarea element there's a submit button. When the button is clicked, it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DeepL API. 
 
-When the response is obtained then it will insert the data accordingly into the div element. 
+When the response is obtained, then it will insert the data accordingly into the div element. 
