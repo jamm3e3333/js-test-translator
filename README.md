@@ -1,11 +1,11 @@
 # English translator web application
-I decided to build the application with node.js/express.js and handlerbars template because it was the easiest and quickest way for me.
-After testing the app I ran it first as a docker container on my local machine then I deployed it on digital ocean on a virtual linux machine unit as a docker container so it's accesible on the internet for everyone without running any commands. 
+I built the application with node.js/express.js and with the handlerbars template because it was the quickest for me.
+After testing the app I ran it first as a docker container on my local machine then I deployed it on digital ocean on a virtual Linux machine unit as a docker container so it's accesible on the internet for everyone without running any commands. 
 The app is available here: http://159.65.220.42:3030.
 
 The code can be clonded and accessed here on this link: https://github.com/jamm3e3333/js-test-translator. 
 
-After cloning the repo run this command:
+After cloning the repo, run this command:
 
 ### `npm install`
 
@@ -23,7 +23,7 @@ The application is divided into backend and frontend. Both backend and frontend 
 
 Backend is built with express.js.
 There are three endpoints.
-When you run the code locally then the url parameter is `localhost:3030`.
+When you run the code locally, the url parameter is `localhost:3030`.
 
 Endpoints:
 
@@ -43,7 +43,7 @@ body:
 - When the request is sent to this endpoint the whole frontend app is served to the client.
 
 3. GET `{{url}}*`
-- In case the client will
+- In case the client will try to add some parameters withing the get method the server will return the 404 - page not found.
 
 ## Frontend
 Frontend runs on node.js too. It's created with simple JS/html/css and hbs templates.
