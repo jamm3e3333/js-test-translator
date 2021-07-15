@@ -43,13 +43,13 @@ body:
 - When the request is sent to this endpoint, the whole frontend app is served to the client.
 
 3. GET `{{url}}*`
-- In case the client will try to add some parameters within the `GET` method the server will return the 404 - page not found.
+- In case the client will try to add some parameters within the `GET` method, the server will return the 404 - page not found.
 
 ## Frontend
 Frontend runs on node.js too. It's created with simple JS/html/css and hbs templates.
 
-On the html page there's a text area where the text is written for translation. 
+On the html, page there's a textarea element where the text is written for translation. 
 
-Under the textarea there's a submit button. When the button is clicked it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DELP API. 
+Under the textarea element there's a submit button. When the button is clicked it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DELP API. 
 
 When the response is obtained then it will insert the data accordingly into the div element. 
