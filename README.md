@@ -37,7 +37,7 @@ body:
 }
 ```
 - In the request in the body object two properties of type string are specified: the text that will be translated and the target language.
-- When the request is sent from the client to this endpoint the function `translate` is executed and will send the request to the DEPL API with the specified parameters. The function will then return a response from the server, which is sent back to the client. 
+- When the request is sent from the client to this endpoint the function `translate` is executed and will send the request to the DeepL API with the specified parameters. The function will then return a response from the server, which is sent back to the client. 
 
 2. GET `{{url}}/`
 - When the request is sent to this endpoint, the whole frontend app is served to the client.
@@ -50,6 +50,6 @@ Frontend runs on node.js too. It's created with simple JS/html/css and hbs templ
 
 On the html, page there's a textarea element where the text is written for translation. 
 
-Under the textarea element there's a submit button. When the button is clicked it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DELP API. 
+Under the textarea element there's a submit button. When the button is clicked it will send a post request using fetch. The body of the post request contains of object where the text and target language are specified and are then used to send a request to the DeepL API. 
 
 When the response is obtained then it will insert the data accordingly into the div element. 
