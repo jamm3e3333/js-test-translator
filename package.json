@@ -4,8 +4,8 @@
   "description": "js-test-translator",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -L ./index.js -e js,css,hbs",
-    "start": "env-cmd -f ./config/prod.env node ./index.js"
+    "dev": "env-cmd -f ./config/dev.env nodemon -L ./index.js -e js,css,hbs",
+    "start": "env-cmd -f ./config/dev.env node ./index.js"
   },
   "repository": {
     "type": "git",
