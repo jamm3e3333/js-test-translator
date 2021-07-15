@@ -4,7 +4,7 @@
   "description": "js-test-translator",
   "main": "index.js",
   "scripts": {
-    "dev": "env-cmd -f ./config/dev.env nodemon ./index.js -e js,css,hbs --unhandled-rejections=strict",
+    "dev": "nodemon -L ./index.js -e js,css,hbs",
     "start": "env-cmd -f ./config/prod.env node ./index.js"
   },
   "repository": {
